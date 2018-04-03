@@ -1,1 +1,10 @@
+Package: BiocMetaWorkflow
+Type: Package
+Title: HDF5 interface to R
+Version: 2.23.6
+Authors@R: c(person("Mike", "Smith", role=c("aut", "cre"), email = "grimbough@gmail.com"))
+Description: 
+License: Artistic-2.0
+VignetteBuilder: knitr
+Suggests: BiocStyle, knitr, rmarkdown, BiocWorkflowTools
 Workflow: True
