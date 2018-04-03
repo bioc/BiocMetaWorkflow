@@ -1,10 +1,15 @@
 Package: BiocMetaWorkflow
 Type: Package
-Title: HDF5 interface to R
-Version: 2.23.6
-Authors@R: c(person("Mike", "Smith", role=c("aut", "cre"), email = "grimbough@gmail.com"))
-Description: 
+Title: BioC Workflow about publishing a Bioc Workflow
+Version: 0.99.1
+Authors@R: c(person("Mike", "Smith", role=c("aut", "cre"), email = "grimbough@gmail.com"),
+            person("Andrzej", "Oleś", role="aut"),
+            person("Wolfgang", "Huber", role="ctb"))
+Description: Bioconductor Workflow describing how to use BiocWorkflowTools to 
+    work with a single R Markdown document to submit to both Bioconductor and 
+    F1000Research.
 License: Artistic-2.0
 VignetteBuilder: knitr
 Suggests: BiocStyle, knitr, rmarkdown, BiocWorkflowTools
+Encoding: UTF-8
 Workflow: True
