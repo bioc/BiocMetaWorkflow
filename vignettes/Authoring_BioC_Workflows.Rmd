@@ -13,7 +13,11 @@ abstract: |
   <!-- FIXME 'both platforms' OK? -->
 keywords: Bioconductor Workflows Publishing
 bibliography: sample.bib
-output: BiocWorkflowTools::f1000_article
+output: BiocStyle::html_document
+vignette: |
+  %\VignetteIndexEntry{Bioc Meta Workflow}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r global_options, include=FALSE}
@@ -75,7 +79,7 @@ In the example above, changing the argument `open = TRUE` will open a new RStudi
 If you do not wish to make a complete package, and instead would simply rather use R Markdown to author an F1000Research article, the recommended platform for most authors is still to work in RStudio.  Rather than creating a new package as before, the user can opt to create a new R Markdown document from the file menu and, assuming the **BiocWorkflowTools** package has been installed, will be presented with the option to use the F1000Research Article template (Figure \@ref(fig:RStudioNew)).
 
 ```{r RStudioNew, echo = FALSE, out.width='50%', fig.align='center', fig.cap="Creation of a new article is integrated into RStudio.  The F1000Research template can be accessed via the `New R Markdown' file menu dialog"}
-knitr::include_graphics("figure/Rstudio_newdoc.png")
+knitr::include_graphics("figures/Rstudio_newdoc.png")
 ```
 
 This will automatically open a new document based on the F1000Research template described previously.
@@ -164,3 +168,5 @@ AKO is funded by the Federal Ministry of Education and Research (BMBF) grant no.
 The authors would like to thank Michael I. Love for sharing his experience with submitting workflows to both locations and his approaches to document format conversion.  They would also like to thank the F1000Research editorial team for their collaboration in determining how to work with R Markdown as the baseline article format.
 <!--MC: Please confirm that Michael is happy to be named in the manuscript-->
 <!--MLS: I have checked and he is fine with this-->
+
+# References
