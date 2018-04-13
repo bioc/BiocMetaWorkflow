@@ -4,7 +4,7 @@ sudo: false
 cache: packages
 
 before_install:
-  - tlmgr install bera nowidow parnotes marginfix
+  - tlmgr install bera nowidow parnotes marginfix authblk babel inputenc fontenc mathdesign colortbl xcolor amsmath graphicx fancyhdr setspace caption lastpage xifthen todonotes geometry
 
 r:
   - devel
@@ -25,3 +25,5 @@ after_script:
 
 after_success:
   - Rscript -e 'covr::codecov()'
+
+
