@@ -60,7 +60,7 @@ biocLite("BiocWorkflowTools")
 
 ### Creating a Bioconductor workflow package
 
-Given **BiocWorkflowTools's** raison d'être is to ease the burden of meeting the distinct requirements of two publishing platforms in a hassle-free manner as possible, our recommended strategy assumes that most authors begin a project with the intention of submitting the final outcome to both Bioconductor and F1000Research.  
+Given the reason behind **BiocWorkflowTools's** existance is to ease the burden of meeting the distinct requirements of two publishing platforms in a hassle-free manner as possible, our recommended strategy assumes that most authors begin a project with the intention of submitting the final outcome to both Bioconductor and F1000Research.  
 
 For the F1000Research the list of material required is straight-forward and familiar: the article itself, a list of references, figures, and supplementary materials. These can then be sent as a collection of files.  When it comes to Bioconductor all the same materials are required; however their computing infrastructure, which enables the regular document checking and easy distribution, also requires that the submission is made in the form of an R package.  There are numerous resources discussing how to create an R package [@wickham2015r] (and we would highly recommend potential authors to read these if they are not familiar with writing packages), but to streamline this process we provide the function `createBiocWorkflow`, which will create the minimum folder structure needed for submission to Bioconductor.  
 

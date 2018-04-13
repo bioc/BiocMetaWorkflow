@@ -1,7 +1,7 @@
 Package: BiocMetaWorkflow
 Type: Package
 Title: BioC Workflow about publishing a Bioc Workflow
-Version: 0.99.2
+Version: 0.99.3
 Authors@R: c(person("Mike", "Smith", role=c("aut", "cre"), 
             email = "grimbough@gmail.com"),
         person("Andrzej", "Oleś", role="aut"),
@@ -10,7 +10,6 @@ Description: Bioconductor Workflow describing how to use BiocWorkflowTools to
         work with a single R Markdown document to submit to both Bioconductor 
         and F1000Research.
 License: Artistic-2.0
-VignetteBuilder: knitr
 Suggests: BiocStyle, knitr, rmarkdown, BiocWorkflowTools
 Encoding: UTF-8
 VignetteBuilder: knitr
