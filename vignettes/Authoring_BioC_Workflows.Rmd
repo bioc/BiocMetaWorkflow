@@ -27,6 +27,12 @@ doc_dir <- getwd()
 knitr::opts_knit$set(root.dir = tempdir())
 ```
 
+**R version**: `r R.version.string`
+
+**Bioconductor version**: `r BiocInstaller::biocVersion()`
+  
+**Package**: `r packageVersion("BiocMetaWorkflow")`
+
 # Introduction
 
 Bioconductor workflow vignettes are training and good scientific practice resources that demonstrate how one might tackle a particular multi-step bioinformatic analysis, primarily (but not necessarily exclusively) using the software hosted by the Bioconductor project [@huber2015orchestrating].  They expand on the vignettes found in individual software packages by focusing on how multiple tools can be combined to conduct an analysis from beginning to end, rather than highlighting the features of a single resource.  However, they do share many similarities, in particular the desire to write such workflows in a literate programming style, with explanatory text surrounding executable code.  This provides benefit to the reader, who can see each step of a workflow in context, and to the author, who can periodically check that the code is still valid and make changes to reflect either updates to the software they rely on, or improvements in methodology.  These documents are then hosted on the [Bioconductor website](www.bioconductor.org), which provides a centralized location for readers to find the articles and to download the software packages detailed within them.  Workflow authors are encouraged to also submit their work as an article to F1000Research's [Bioconductor Gateway](https://f1000research.com/gateways/bioconductor), which provides the benefits (both to authors and readers) of increased visibility, peer-review and a citable reference.  The intention is that (essentially) identical content will be present in both locations.  
