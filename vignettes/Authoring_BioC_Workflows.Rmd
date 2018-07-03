@@ -62,8 +62,6 @@ source("http://www.bioconductor.org/biocLite.R")
 biocLite("BiocWorkflowTools")
 ```
 
-<!-- FIXME Can you ask Martin when, instead of this hacky 'source' thingy, people can use `install.packages("BiocInstaller")`, (with that package being on CRAN) ?-->
-
 ### Creating a Bioconductor workflow package
 
 Given the reason behind **BiocWorkflowTools's** existance is to ease the burden of meeting the distinct requirements of two publishing platforms in a hassle-free manner as possible, our recommended strategy assumes that most authors begin a project with the intention of submitting the final outcome to both Bioconductor and F1000Research.  
@@ -167,7 +165,7 @@ Software license: MIT
 No competing interests were disclosed.
 
 # Grant information
-MLS is funded by The German Network for Bioinformatics Infrastructure (de.NBI) Förderkennzeichen Nr. 031A537 A.
+MLS is funded by The German Network for Bioinformatics Infrastructure (de.NBI) Förderkennzeichen Nr. 031A537 B.
 AKO is funded by the Federal Ministry of Education and Research (BMBF) grant no. 01EK1502A (BioToP).
 
 # Acknowledgements
