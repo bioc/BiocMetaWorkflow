@@ -29,7 +29,7 @@ knitr::opts_knit$set(root.dir = tempdir())
 
 **R version**: `r R.version.string`
 
-**Bioconductor version**: `r BiocInstaller::biocVersion()`
+**Bioconductor version**: `r BiocManager::version()`
   
 **Package**: `r packageVersion("BiocMetaWorkflow")`
 
@@ -58,8 +58,9 @@ In order to use **BiocWorkflowTools** the user must have **R** version 3.4.0 or 
 **BiocWorkflowTools** can be obtained from the Bioconductor package repository by running the following commands in your R session.
 
 ```{r packageInstallation, eval = FALSE}
-source("http://www.bioconductor.org/biocLite.R")
-biocLite("BiocWorkflowTools")
+if (!"BiocManager" %in% rownames(installed.packages()))
+     install.packages("BiocManager")
+BiocManager::install("BiocWorkflowTools")
 ```
 
 ### Creating a Bioconductor workflow package
