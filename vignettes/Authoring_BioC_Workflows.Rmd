@@ -71,7 +71,6 @@ For the F1000Research the list of material required is straight-forward and fami
 
 ```{r createBiocWorkflow, message=FALSE}
 BiocWorkflowTools::createBiocWorkflow("MyWorkflow",
-                                      quiet = TRUE,
                                       open = FALSE)
 ```
 
