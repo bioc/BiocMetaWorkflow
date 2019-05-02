@@ -1,7 +1,7 @@
 Package: BiocMetaWorkflow
 Type: Package
 Title: BioC Workflow about publishing a Bioc Workflow
-Version: 1.5.1
+Version: 1.6.0
 Authors@R: c(person("Mike", "Smith", role=c("aut", "cre"), 
             email = "grimbough@gmail.com"),
         person("Andrzej", "Oleś", role="aut"),
