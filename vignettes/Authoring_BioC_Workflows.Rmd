@@ -70,7 +70,8 @@ Given the reason behind **BiocWorkflowTools's** existance is to ease the burden 
 For the F1000Research the list of material required is straight-forward and familiar: the article itself, a list of references, figures, and supplementary materials. These can then be sent as a collection of files.  When it comes to Bioconductor all the same materials are required; however their computing infrastructure, which enables the regular document checking and easy distribution, also requires that the submission is made in the form of an R package.  There are numerous resources discussing how to create an R package [@wickham2015r] (and we would highly recommend potential authors to read these if they are not familiar with writing packages), but to streamline this process we provide the function `createBiocWorkflow`, which will create the minimum folder structure needed for submission to Bioconductor.  
 
 ```{r createBiocWorkflow, message=FALSE}
-BiocWorkflowTools::createBiocWorkflow("MyWorkflow",
+workflow_location <- file.path(tempdir(), "MyWorkflow")
+BiocWorkflowTools::createBiocWorkflow(path = workflow_location,
                                       open = FALSE)
 ```
 
@@ -83,7 +84,7 @@ In the example above, changing the argument `open = TRUE` will open a new RStudi
 If you do not wish to make a complete package, and instead would simply rather use R Markdown to author an F1000Research article, the recommended platform for most authors is still to work in RStudio.  Rather than creating a new package as before, the user can opt to create a new R Markdown document from the file menu and, assuming the **BiocWorkflowTools** package has been installed, will be presented with the option to use the F1000Research Article template (Figure \@ref(fig:RStudioNew)).
 
 ```{r RStudioNew, echo = FALSE, out.width='50%', fig.align='center', fig.cap="Creation of a new article is integrated into RStudio.  The F1000Research template can be accessed via the `New R Markdown' file menu dialog"}
-knitr::include_graphics("figures/Rstudio_newdoc.png")
+knitr::include_graphics("figures/Rstudio_newdoc.png", error = FALSE)
 ```
 
 This will automatically open a new document based on the F1000Research template described previously.
