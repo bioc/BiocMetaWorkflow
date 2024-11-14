@@ -1,7 +1,7 @@
 Package: BiocMetaWorkflow
 Type: Package
 Title: BioC Workflow about publishing a Bioc Workflow
-Version: 1.29.0
+Version: 1.29.1
 Authors@R: c(person("Mike", "Smith", role=c("aut", "cre"), 
             email = "grimbough@gmail.com"),
         person("Andrzej", "Oleś", role="aut"),
@@ -15,3 +15,4 @@ Encoding: UTF-8
 VignetteBuilder: knitr
 Workflow: True
 biocViews: BasicWorkflow
+PackageStatus: Deprecated
